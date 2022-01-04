@@ -1,0 +1,12 @@
+{
+    "receiverAddress": "0x0000000000000000000000000000000000000000",
+    "rpcProvider": {
+        "wss": "",
+        "http": "https://mainnet.infura.io/v3/..."
+    },
+    "tx": {
+        "gasLimit": "21000",
+        "maxFee": "",
+        "maxPriorityFee": "2"
+    }
+}

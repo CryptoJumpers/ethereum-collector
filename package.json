@@ -1,0 +1,24 @@
+{
+  "name": "nft-bot",
+  "version": "1.0.0",
+  "description": "Non Fungible Token Automation on Ethereum.",
+  "main": "index.ts",
+  "scripts": {
+    "start": "tsc && node dist/src/index.js"
+  },
+  "author": "Jimmy",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.8.1",
+    "eslint": "^8.6.0",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "dayjs": "^1.10.7",
+    "dotenv": "^10.0.0",
+    "ethers": "^5.5.2",
+    "web3": "^1.6.1"
+  }
+}
