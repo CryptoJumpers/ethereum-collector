@@ -2,9 +2,9 @@
   "name": "ethereum-collector",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "build/index.ts",
   "scripts": {
-    "start": "tsc && node dist/src/index.js"
+    "start": "tsc && node build/src/index.js"
   },
   "author": "Jimmy",
   "license": "ISC",
