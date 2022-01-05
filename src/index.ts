@@ -6,7 +6,8 @@ import path from 'path';
 
 (async () => {
 	const provider = utils.ethers.connect();
-	const wallets = utils.utils.readWallets(path.join(__dirname, '../../config/wallets.txt'));
+	utils.logger.log('Loading wallet...');
+	const wallets = utils.utils.readWallets(path.join(__dirname, '../config/wallets.txt'));
 
 	const gasPrice = await utils.ethers.getGasPrice();
 	utils.logger.log(`Current Gas Price: ${utils.ethers.formatGwei(gasPrice)}`, 'info');

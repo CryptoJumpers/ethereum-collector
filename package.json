@@ -4,7 +4,8 @@
   "description": "",
   "main": "build/index.ts",
   "scripts": {
-    "start": "tsc && node build/index.js"
+    "post-install": "cp ./config/wallets.txt ./build/config/wallets.txt",
+    "start": "tsc && yarn post-install && node build/src/index.js"
   },
   "author": "Jimmy",
   "license": "ISC",
