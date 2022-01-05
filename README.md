@@ -1,4 +1,4 @@
-# Ethereum Wallet Emptier
+# Ethereum Wallet Collector
 
 Recover $ETH from multiple wallets to one.
 
@@ -6,19 +6,22 @@ Recover $ETH from multiple wallets to one.
 
 The script will send to the receiver the whole eth balance found in each wallet.
 
-1. Open "config" folder and edit the "config.json" file.
+1. Open "config" folder and edit the "config.json" file. (Both MaxFee and MaxPriorityFee are in GWEI.)
 
 2. Load your wallets into wallets.txt (format address:privateKey)
 
-Both MaxFee and MaxPriorityFee are in GWEI.
+If no **maxFee** is set the script will use the default values pulled from the blockchain.
 
-If no MaxFee is set the script will use the default values from chain.
+If no **maxPriorityFee** is set the script will use 2 GWEI.
 
-If no MaxPriorityFee is set the script will use 2 GWEI.
+# Installation and Usage
 
+Install the dependencies.
 ```js
 yarn
 ````
+
+Run the script.
 ```js
 yarn start
 ```
